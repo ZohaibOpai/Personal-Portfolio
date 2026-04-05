@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Zohaib Opai - Frontend Developer متخصص in HTML, CSS, JavaScript. View my portfolio and projects.">
+  <meta property="og:title" content="Zohaib Opai Portfolio">
+  <meta property="og:description" content="Frontend Developer | JavaScript | Responsive Design">
+  <meta property="og:image" content="favicon.png">
+  <title>Zohaib — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="35x35" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Z<span>.</span>Opai</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-tag">Available for opportunities</div>
+      <h1 class="hero-name">Zohaib<br /><em>Opai</em></h1>
+      <div class="hero-title-row">
+        <div class="hero-title-line"></div>
+        <div class="hero-typed">
+          <span id="typed-text"></span><span class="cursor-blink"></span>
+        </div>
+      </div>
+      <p class="hero-desc">
+        A passionate web and app developer in training at
+        <strong>Saylani Welfare IT</strong>, building modern digital
+        experiences with HTML, CSS, JavaScript, and beyond.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+      <br />
+      <a href="profile.pdf" download class="btn-primary">Download CV</a>
+      <br />
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">3<span>+</span></div>
+          <div class="hero-stat-label">Cisco Certs</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">ES<span>6</span></div>
+          <div class="hero-stat-label">JS Level</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">1<span>yr</span></div>
+          <div class="hero-stat-label">Learning</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">Scroll down</div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-bg-text">Z</div>
+        <div class="hero-code-block">
+          <div class="code-comment">// zohaib.config.js</div>
+          <div>&nbsp;</div>
+          <div>
+            <span class="code-key">const</span>
+            <span class="code-dot">developer</span> = {
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="code-key">name</span>:
+            <span class="code-str">"Zohaib Opai"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="code-key">role</span>:
+            <span class="code-str">"Web Developer"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;<span class="code-key">institute</span>:
+            <span class="code-str">"Saylani"</span>,
+          </div>
+          <div>&nbsp;&nbsp;<span class="code-key">stack</span>: [</div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"HTML"</span>,
+            <span class="code-str">"CSS"</span>,
+          </div>
+          <div>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"JavaScript"</span>, <span class="code-str">"ES6"</span>
+          </div>
+          <div>&nbsp;&nbsp;],</div>
+          <div>
+            &nbsp;&nbsp;<span class="code-key">status</span>:
+            <span class="code-str">"Learning hard"</span>
+          </div>
+          <div>};</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-box">
+          <div class="about-initials">ZO</div>
+          <div class="about-badge">
+            <span class="big">17</span>
+            Yrs Old<br />Developer
+          </div>
+        </div>
+        <div class="about-frame-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="section-tag reveal">About Me</div>
+        <h2 class="section-heading reveal reveal-delay-1">
+          The Story<br />So <em>Far</em>
+        </h2>
+        <p class="section-sub reveal reveal-delay-2">
+          Hey! I'm Zohaib — a dedicated web and app development student at
+          Saylani Welfare IT. I've gone from zero to building real projects
+          with HTML, CSS, JavaScript, and now diving deep into ES6 modern
+          JavaScript. I hold Cisco certifications that validate my
+          foundational skills.
+        </p>
+        <div class="about-facts reveal reveal-delay-3">
+          <div class="about-fact">
+            <div class="about-fact-label">Institute</div>
+            <div class="about-fact-val">Saylani Welfare IT</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-label">Course</div>
+            <div class="about-fact-val">Web &amp; App Dev</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-label">Location</div>
+            <div class="about-fact-val">Pakistan</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-label">Status</div>
+            <div class="about-fact-val">Actively Learning</div>
+          </div>
+        </div>
+        <div class="about-tags reveal">
+          <span class="about-tag">HTML5</span>
+          <span class="about-tag">CSS3</span>
+          <span class="about-tag">JavaScript</span>
+          <span class="about-tag">ES6+</span>
+          <span class="about-tag">Responsive</span>
+          <span class="about-tag">Cisco Certified</span>
+          <span class="about-tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-tag reveal">Technical Skills</div>
+    <h2 class="section-heading reveal reveal-delay-1">
+      What I<br /><em>Know</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Skills built through hands-on projects and certified courses at Saylani
+      and Cisco.
+    </p>
+    <div class="skills-grid" id="skillsGrid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">Core</div>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-desc">
+          Semantic markup, accessibility, forms, and modern HTML5 APIs with
+          clean structure.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="90"></div>
+        </div>
+        <div class="skill-pct">90%</div>
+        <div class="skill-cert-tag">Cisco Certified</div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">Style</div>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-desc">
+          Flexbox, Grid, animations, transitions, responsive design and modern
+          layout techniques.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="85"></div>
+        </div>
+        <div class="skill-pct">85%</div>
+        <div class="skill-cert-tag">Cisco Certified</div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">Logic</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-desc">
+          DOM manipulation, events, fetch API, asynchronous JS, and now
+          mastering ES6+ syntax.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="78"></div>
+        </div>
+        <div class="skill-pct">78%</div>
+        <div class="skill-cert-tag">Cisco Certified</div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-icon">Modern</div>
+        <div class="skill-name">ES6+</div>
+        <div class="skill-desc">
+          Arrow functions, destructuring, modules, classes, promises,
+          async/await, spread and rest.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="70"></div>
+        </div>
+        <div class="skill-pct">70%</div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-icon">Layout</div>
+        <div class="skill-name">Responsive</div>
+        <div class="skill-desc">
+          Mobile-first design, media queries, fluid grids, and cross-browser
+          compatible layouts.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="82"></div>
+        </div>
+        <div class="skill-pct">82%</div>
+      </div>
+      <div class="skill-card reveal reveal-delay-3">
+        <div class="skill-icon">Tools</div>
+        <div class="skill-name">Git &amp; Tools</div>
+        <div class="skill-desc">
+          Version control with Git, GitHub workflows, VS Code, and developer
+          tooling essentials.
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-fill" data-pct="65"></div>
+        </div>
+        <div class="skill-pct">65%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certs">
+    <div class="section-tag reveal">Certifications</div>
+    <h2 class="section-heading reveal reveal-delay-1">
+      Cisco <em>Certified</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Official certifications earned through Cisco's global networking and
+      development programs.
+    </p>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-num">01</div>
+        <div class="cert-issuer">
+          <div class="cert-issuer-dot"></div>
+          Cisco Networking Academy
+        </div>
+        <div class="cert-title">HTML Essentials</div>
+        <div class="cert-desc">
+          Mastery of semantic HTML5 structure, web standards, forms, tables,
+          and accessibility fundamentals validated by Cisco.
+        </div>
+        <div class="cert-verify">
+          <div class="cert-verify-dot"></div>
+          Verified Certificate
+        </div>
+        <div class="cert-border cert-border-1"></div>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <div class="cert-num">02</div>
+        <div class="cert-issuer">
+          <div class="cert-issuer-dot"></div>
+          Cisco Networking Academy
+        </div>
+        <div class="cert-title">CSS Essentials</div>
+        <div class="cert-desc">
+          Complete mastery of CSS3 — selectors, box model, Flexbox, Grid,
+          transitions, responsive design, and styling methodology.
+        </div>
+        <div class="cert-verify">
+          <div class="cert-verify-dot"></div>
+          Verified Certificate
+        </div>
+        <div class="cert-border cert-border-2"></div>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <div class="cert-num">03</div>
+        <div class="cert-issuer">
+          <div class="cert-issuer-dot"></div>
+          Cisco Networking Academy
+        </div>
+        <div class="cert-title">JavaScript Essentials 1</div>
+        <div class="cert-desc">
+          Core JavaScript programming concepts — variables, functions, control
+          flow, DOM interaction, events, and modern JS foundations.
+        </div>
+        <div class="cert-verify">
+          <div class="cert-verify-dot"></div>
+          Verified Certificate
+        </div>
+        <div class="cert-border cert-border-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-tag reveal">Projects</div>
+    <h2 class="section-heading reveal reveal-delay-1">
+      Things I've<br /><em>Built</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Real projects built from scratch during my learning journey. Always
+      improving, always shipping.
+    </p>
+
+    <div class="projects-grid">
+      <!-- TODO LIST -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">TODO</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Todo List App</div>
+          <a href="https://github.com/ZohaibOpai/TODO-List" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- CALCULATOR -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">CALC</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Calculator</div>
+          <a href="https://github.com/ZohaibOpai/Calculator.js" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- ROADMAP -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">MAP</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Roadmap Project</div>
+          <a href="https://github.com/ZohaibOpai/Roadmap.sh" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- MINI HACKATHON -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">HACK</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Mini Hackathon</div>
+          <a href="https://github.com/ZohaibOpai/Mini-Hackathon" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- ICE CREAM -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">ICE</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Ice Cream Website</div>
+          <a href="https://github.com/ZohaibOpai/Ice-Cream" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- WHATSAPP WEB -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">WA</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">WhatsApp Web Clone</div>
+          <a href="https://github.com/ZohaibOpai/WhatsApp__Web" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- BOOTSTRAP -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">BOOT</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Bootstrap Portfolio</div>
+          <a href="https://github.com/ZohaibOpai/Bootstrap_Portfolio" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- HARMONY -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">HH</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Harmony Heights</div>
+          <a href="https://github.com/ZohaibOpai/Harmony_Heights" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <!-- ROLL DICE GAME -->
+      <div class="proj-card">
+        <div class="proj-thumb">
+          <div class="proj-thumb-text">ROLL DICE</div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-name">Roll Dice</div>
+          <a href="https://github.com/ZohaibOpai/Roll-Dice.git" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="section-tag reveal">My Journey</div>
+    <h2 class="section-heading reveal reveal-delay-1">
+      The Road<br /><em>Taken</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      From the first HTML tag to ES6 modern JavaScript — a timeline of growth,
+      effort, and certifications.
+    </p>
+    <div class="timeline" id="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Start — 2023</div>
+        <div class="tl-title">Enrolled at Saylani Welfare IT</div>
+        <div class="tl-desc">
+          Joined the Web and App Development course at one of Pakistan's most
+          respected free IT institutes. The journey begins.
+        </div>
+        <div class="tl-badge">Milestone</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2023</div>
+        <div class="tl-title">Cisco HTML Essentials — Certified</div>
+        <div class="tl-desc">
+          Completed and passed Cisco Networking Academy's HTML Essentials
+          course. Semantic HTML5 mastered and globally verified.
+        </div>
+        <div class="tl-badge">Cisco Certificate</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2023</div>
+        <div class="tl-title">Cisco CSS Essentials — Certified</div>
+        <div class="tl-desc">
+          Levelled up with Cisco's CSS Essentials certification. Flexbox,
+          Grid, and responsive design locked in.
+        </div>
+        <div class="tl-badge">Cisco Certificate</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2024</div>
+        <div class="tl-title">Cisco JS Essentials 1 — Certified</div>
+        <div class="tl-desc">
+          Earned JavaScript Essentials 1 from Cisco — core programming logic,
+          functions, DOM, and events all validated.
+        </div>
+        <div class="tl-badge">Cisco Certificate</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot active"></div>
+        <div class="tl-date">Now — 2025</div>
+        <div class="tl-title">ES6+ JavaScript — In Progress</div>
+        <div class="tl-desc">
+          Currently deep in ES6 modern JavaScript — classes, modules,
+          destructuring, async/await, and Promises. Going strong!
+        </div>
+        <div class="tl-badge">Active Learning</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-tag reveal">Contact</div>
+    <h2 class="section-heading reveal reveal-delay-1">
+      Let's <em>Connect</em>
+    </h2>
+    <p class="section-sub reveal reveal-delay-2">
+      Open to internships, freelance work, and collaborations. Let's build
+      something great together.
+    </p>
+    <div class="contact-wrap">
+      <div>
+        <div class="contact-info-item reveal">
+          <div class="contact-icon">@</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val">
+              <a href="mailto:zohaibdude2505@gmail.com">zohaibdude2505@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-item reveal">
+          <div class="contact-icon">IN</div>
+          <div>
+            <div class="contact-info-label">LinkedIn</div>
+            <div class="contact-info-val">
+              <a href="https://www.linkedin.com/in/muhammad-zohaib-mazhar-488226338/" target="_blank">
+                linkedin.com/in/zohaib
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-item reveal reveal-delay-1">
+          <div class="contact-icon">#</div>
+          <div>
+            <div class="contact-info-label">Phone / WhatsApp</div>
+            <div class="contact-info-val">
+              <a
+                href="https://api.whatsapp.com/send?phone=+923008218012&text=Hello%21%20Would%20you%20like%20to%20help%20me?">+92
+                300 821 8012</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-info-item reveal reveal-delay-2">
+          <div class="contact-icon">GH</div>
+          <div>
+            <div class="contact-info-label">GitHub</div>
+            <div class="contact-info-val">
+              <a href="https://github.com/ZohaibOpai" target="_blank">github.com/ZohaibOpai</a>
+            </div>
+          </div>
+        </div>
+        <div class="social-row reveal reveal-delay-3">
+          <a href="https://github.com/ZohaibOpai" target="_blank" class="social-btn" title="GitHub">GH</a>
+          <a href="mailto:zohaibdude2505@gmail.com" class="social-btn" title="Email">EM</a>
+          <a href="https://wa.me/923008218012" target="_blank" class="social-btn" title="Phone">WA</a>
+          <a href="https://www.linkedin.com/in/muhammad-zohaib-mazhar-488226338/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BDO0hfhCFSTOS7o9eba6HyQ%3D%3D"
+            target="_blank" class="social-btn" title="LinkedIn">LI</a>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-1">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input class="form-input" type="text" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input class="form-input" type="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="form-btn" id="formBtn">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Z<span>.</span>Opai</div>
+    <div class="footer-copy">
+      &copy; 2026 Zohaib Opai — All rights reserved
+    </div>
+    <button class="footer-back" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+      Back to top ^
+    </button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
