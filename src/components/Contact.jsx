@@ -41,7 +41,7 @@ export default function Contact() {
             <div>
               <div className="contact-info-label">LinkedIn</div>
               <div className="contact-info-val">
-                <a href="https://www.linkedin.com/in/muhammad-zohaib-mazhar-488226338/" target="_blank" rel="noreferrer">
+                <a href="" target="_blank" rel="noreferrer">
                   linkedin.com/in/zohaib
                 </a>
               </div>
@@ -75,8 +75,9 @@ export default function Contact() {
           <div className="social-row reveal reveal-delay-3">
             <a href="https://github.com/ZohaibOpai" target="_blank" rel="noreferrer" className="social-btn" title="GitHub">GH</a>
             <a href="mailto:zohaibdude2505@gmail.com" className="social-btn" title="Email">EM</a>
+             <a href="mailto:zohaibclaude@gmail.com" className="social-btn" title="Email">EM</a>
             <a href="https://wa.me/923008218012" target="_blank" rel="noreferrer" className="social-btn" title="WhatsApp">WA</a>
-            <a href="https://www.linkedin.com/in/muhammad-zohaib-mazhar-488226338/" target="_blank" rel="noreferrer" className="social-btn" title="LinkedIn">LI</a>
+            <a href="" target="_blank" rel="noreferrer" className="social-btn" title="LinkedIn">LI</a>
           </div>
         </div>
 

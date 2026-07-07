@@ -16,7 +16,7 @@ const projects = [
   { thumb: "BOOT", name: "Bootstrap Portfolio", Github_link: "https://github.com/ZohaibOpai/Bootstrap_Portfolio", Live_link: "" },
   { thumb: "HH", name: "Harmony Heights", Github_link: "https://github.com/ZohaibOpai/Harmony_Heights", Live_link: "" },
   { thumb: "ROLL DICE", name: "Roll Dice", Github_link: "https://github.com/ZohaibOpai/Roll-Dice.git", Live_link: "" },
-  { thumb: "", name: "", Github_link: "", Live_link: "" },
+  { thumb: "AI", name: "ZohaibAI", Github_link: "https://github.com/ZohaibOpai/ZohaibAI", Live_link: "https://zohaib-ai-orcin.vercel.app" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
