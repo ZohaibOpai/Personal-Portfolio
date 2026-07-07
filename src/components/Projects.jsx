@@ -49,8 +49,10 @@ export default function Projects() {
             </div>
             <div className="proj-body">
               <div className="proj-name">{p.name}</div>
-              {p.link ? (
-                <a href={p.link} target="_blank" rel="noreferrer">View Project →</a>
+              {(p.Live_link || p.Github_link) ? (
+                <a href={p.Live_link || p.Github_link} target="_blank" rel="noreferrer">
+                  {p.Live_link ? "View Live →" : "View GitHub →"}
+                </a>
               ) : (
                 <a href="#" style={{ opacity: 0.4, pointerEvents: "none" }}>Coming Soon</a>
               )}
