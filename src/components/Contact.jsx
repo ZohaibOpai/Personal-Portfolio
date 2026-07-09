@@ -1,16 +1,56 @@
 import { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [btnText, setBtnText] = useState("Send Message");
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSend = () => {
-    setBtnText("Message Sent!");
-    setSent(true);
-    setTimeout(() => {
-      setBtnText("Send Message");
-      setSent(false);
-    }, 3000);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSend = async () => {
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill all fields!");
+      return;
+    }
+
+    setBtnText("Sending...");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "504ea00c-c0ec-415f-a593-e1bea715b591",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setBtnText("Message Sent! ✅");
+        setSent(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => {
+          setBtnText("Send Message");
+          setSent(false);
+        }, 3000);
+      } else {
+        throw new Error("Failed");
+      }
+    } catch {
+      setBtnText("Failed! Try Again ❌");
+      setError(true);
+      setTimeout(() => {
+        setBtnText("Send Message");
+        setError(false);
+      }, 3000);
+    }
   };
 
   return (
@@ -75,7 +115,7 @@ export default function Contact() {
           <div className="social-row reveal reveal-delay-3">
             <a href="https://github.com/ZohaibOpai" target="_blank" rel="noreferrer" className="social-btn" title="GitHub">GH</a>
             <a href="mailto:zohaibdude2505@gmail.com" className="social-btn" title="Email">EM</a>
-             <a href="mailto:zohaibclaude@gmail.com" className="social-btn" title="Email">EM</a>
+            <a href="mailto:zohaibclaude@gmail.com" className="social-btn" title="Email">EM</a>
             <a href="https://wa.me/923008218012" target="_blank" rel="noreferrer" className="social-btn" title="WhatsApp">WA</a>
             <a href="" target="_blank" rel="noreferrer" className="social-btn" title="LinkedIn">LI</a>
           </div>
@@ -84,21 +124,40 @@ export default function Contact() {
         <div className="contact-form reveal reveal-delay-1">
           <div className="form-group">
             <label className="form-label">Your Name</label>
-            <input className="form-input" type="text" placeholder="John Doe" />
+            <input
+              className="form-input"
+              type="text"
+              name="name"
+              placeholder="John Doe"
+              value={formData.name}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label className="form-label">Email Address</label>
-            <input className="form-input" type="email" placeholder="john@example.com" />
+            <input
+              className="form-input"
+              type="email"
+              name="email"
+              placeholder="john@example.com"
+              value={formData.email}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label className="form-label">Message</label>
-            <textarea className="form-textarea" placeholder="Tell me about your project..."></textarea>
+            <textarea
+              className="form-textarea"
+              name="message"
+              placeholder="Tell me about your project..."
+              value={formData.message}
+              onChange={handleChange}
+            ></textarea>
           </div>
           <button
             className="form-btn"
-            id="formBtn"
             onClick={handleSend}
-            style={sent ? { background: "#4caf50" } : {}}
+            style={sent ? { background: "#4caf50" } : error ? { background: "#f44336" } : {}}
           >
             {btnText}
           </button>
