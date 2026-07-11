@@ -17,7 +17,7 @@ const projects = [
   { thumb: "HH", name: "Harmony Heights", Github_link: "https://github.com/ZohaibOpai/Harmony_Heights", Live_link: "https://dainty-praline-11d809.netlify.app/" },
   { thumb: "ROLL DICE", name: "Roll Dice", Github_link: "https://github.com/ZohaibOpai/Roll-Dice.git", Live_link: "https://idyllic-marigold-f5a26c.netlify.app/" },
   { thumb: "AI", name: "ZohaibAI", Github_link: "https://github.com/ZohaibOpai/ZohaibAI", Live_link: "https://zohaib-ai-orcin.vercel.app" },
-  { thumb: "", name: "", Github_link: "", Live_link: "" },
+  { thumb: "AI", name: "MAINTAINIQ", Github_link: "https://github.com/ZohaibOpai/Maintain-AI.git", Live_link: "https://maintain-ai-xi.vercel.app/" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
   { thumb: "", name: "", Github_link: "", Live_link: "" },
