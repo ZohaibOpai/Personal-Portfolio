@@ -6,6 +6,7 @@ const words = [
   "CSS Artist",
   "JS Engineer",
   "App Builder",
+  "Backend Learner",
   "Saylani Student",
 ];
 
@@ -61,7 +62,8 @@ export default function Hero() {
         <p className="hero-desc">
           A passionate web and app developer in training at{" "}
           <strong>Saylani Welfare IT</strong>, building modern digital
-          experiences with HTML, CSS, JavaScript, and beyond.
+          experiences with HTML, CSS, JavaScript — and now leveling up
+          with backend development.
         </p>
 
         <div className="hero-cta">
@@ -110,7 +112,8 @@ export default function Hero() {
             <div>&nbsp;&nbsp;&nbsp;&nbsp;<span className="code-str">"HTML"</span>, <span className="code-str">"CSS"</span>,</div>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;<span className="code-str">"JavaScript"</span>, <span className="code-str">"ES6"</span></div>
             <div>&nbsp;&nbsp;],</div>
-            <div>&nbsp;&nbsp;<span className="code-key">status</span>: <span className="code-str">"Learning hard"</span></div>
+            <div>&nbsp;&nbsp;<span className="code-key">learning</span>: <span className="code-str">"Backend Dev"</span>,</div>
+            <div>&nbsp;&nbsp;<span className="code-key">status</span>: <span className="code-str">"Leveling up"</span></div>
             <div>{"}"}</div>
           </div>
         </div>

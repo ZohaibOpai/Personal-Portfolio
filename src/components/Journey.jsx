@@ -30,9 +30,16 @@ const timeline = [
     active: false,
   },
   {
-    date: "Now — 2026",
+    date: "2025",
     title: ["ES6+ JavaScript — Completed", "React.js + Python — In Progress"],
-    desc: "Currently deep in ES6 modern JavaScript — classes, modules, destructuring, async/await, and Promises. Going strong!",
+    desc: "Went deep into ES6 modern JavaScript — classes, modules, destructuring, async/await, and Promises — while picking up React and Python.",
+    badge: "Milestone",
+    active: false,
+  },
+  {
+    date: "Now — 2026",
+    title: "Backend Development — In Progress",
+    desc: "Now expanding from the frontend into backend development, learning to build APIs and full-stack applications end to end.",
     badge: "Active Learning",
     active: true,
   },
@@ -69,7 +76,7 @@ export default function Journey() {
         The Road<br /><em>Taken</em>
       </h2>
       <p className="section-sub reveal reveal-delay-2">
-        From the first HTML tag to ES6 modern JavaScript — a timeline of growth, effort, and certifications.
+        From the first HTML tag to backend development — a timeline of growth, effort, and certifications.
       </p>
 
       <div className="timeline" id="timeline" ref={tlRef}>

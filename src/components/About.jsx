@@ -21,9 +21,10 @@ export default function About() {
           <p className="section-sub reveal reveal-delay-2">
             Hey! I'm Zohaib — a dedicated web and app development student at
             Saylani Welfare IT. I've gone from zero to building real projects
-            with HTML, CSS, JavaScript, and now diving deep into ES6 modern
-            JavaScript. I hold Cisco certifications that validate my
-            foundational skills.
+            with HTML, CSS, JavaScript, and ES6 modern JavaScript, and I'm
+            now expanding into backend development to build complete,
+            full-stack applications. I hold Cisco certifications that
+            validate my foundational skills.
           </p>
 
           <div className="about-facts reveal reveal-delay-3">
@@ -41,7 +42,7 @@ export default function About() {
           </div>
 
           <div className="about-tags reveal">
-            {["HTML5", "CSS3", "JavaScript", "ES6+", "Responsive", "Cisco Certified", "Git"].map(
+            {["HTML5", "CSS3", "JavaScript", "ES6+", "Backend (Learning)", "Responsive", "Cisco Certified", "Git"].map(
               (tag) => <span className="about-tag" key={tag}>{tag}</span>
             )}
           </div>

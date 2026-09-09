@@ -5,6 +5,7 @@ const skills = [
     { icon: "Style", name: "CSS3", desc: "Flexbox, Grid, animations, transitions, responsive design and modern layout techniques.", pct: 85, cert: true },
     { icon: "Logic", name: "JavaScript", desc: "DOM manipulation, events, fetch API, asynchronous JS, and now mastering ES6+ syntax.", pct: 78, cert: true },
     { icon: "Modern", name: "ES6+", desc: "Arrow functions, destructuring, modules, classes, promises, async/await, spread and rest.", pct: 70, cert: false },
+    { icon: "Server", name: "Backend Dev", desc: "Just getting started — APIs, servers, and databases to go full-stack, one step at a time.", pct: 20, cert: false },
     { icon: "Layout", name: "Responsive", desc: "Mobile-first design, media queries, fluid grids, and cross-browser compatible layouts.", pct: 82, cert: false },
     { icon: "Tools", name: "Git & Tools", desc: "Version control with Git, GitHub workflows, VS Code, and developer tooling essentials.", pct: 65, cert: false },
 ];
